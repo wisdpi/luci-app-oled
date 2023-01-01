@@ -1,0 +1,123 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: dingpengyu <dingpengyu06@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"X-Generator: Poedit 2.3.1\n"
+
+msgid ""
+"A LuCI app that helps you config your oled display (SSD1306, 0.91', 128X32) "
+"with screensavers! <br /> <br /> Any issues, please go to:"
+msgstr "这是一款支持在ssd1306，0.91寸，128x32像素的oled显示屏上显示你要的信息，包含屏保的程序。<br /> <br />任何问题请到："
+
+msgid "CPU frequency"
+msgstr "CPU频率"
+
+msgid "CPU temperature"
+msgstr "CPU温度"
+
+msgid "Scroll Text"
+msgstr "文字滚动"
+
+msgid "Enable Auto switch"
+msgstr "启用定时开关"
+
+msgid "From"
+msgstr "起始时间"
+
+msgid "To"
+msgstr "结束时间"
+
+msgid "Text you want to scroll"
+msgstr "你想要显示的文字"
+
+msgid "which eth to monitor"
+msgstr "选择监控哪个网口"
+
+msgid "Collecting data..."
+msgstr "正在收集数据..."
+
+msgid "Date"
+msgstr "时间"
+
+msgid "Display miniature bitmap"
+msgstr "小图案"
+
+msgid "Display interval(s)"
+msgstr "信息显示间隔（秒）"
+
+msgid "Screensaver will activate in set seconds"
+msgstr "屏保每间隔设置的时间运行一次"
+
+msgid "Draw Many Lines"
+msgstr "直线"
+
+msgid "Draw Multiple Circles"
+msgstr "多圆"
+
+msgid "Draw Multiple Rectangles"
+msgstr "多方块"
+
+msgid "Draw Rectangles"
+msgstr "方块"
+
+msgid "Draw Triangles"
+msgstr "三角形"
+
+msgid "Draw a bitmap and animate"
+msgstr "动图"
+
+msgid "Draw a bitmap and animate movement"
+msgstr "变化图"
+
+msgid "Draw a white circle, 10 pixel radius"
+msgstr "实心圆"
+
+msgid "Enable"
+msgstr "启用"
+
+msgid "Fill Triangles"
+msgstr "三角填充"
+
+msgid "Fill the Round Rectangles"
+msgstr "方形填充"
+
+msgid "Format YYYY-MM-DD HH:MM:SS"
+msgstr "日期格式 YYYY-MM-DD HH:MM:SS"
+
+msgid "IP"
+msgstr ""
+
+msgid "Info Display"
+msgstr "显示信息"
+
+msgid "Invert Display Normalize it"
+msgstr "反转"
+
+msgid "LAN IP address"
+msgstr "LAN地址"
+
+msgid "NOT RUNNING"
+msgstr ""
+
+msgid "Network speed"
+msgstr "网速"
+
+msgid "OLED"
+msgstr ""
+
+msgid "RUNNING"
+msgstr "运行中"
+
+msgid "Setting"
+msgstr "设置"
+
+msgid "screensaver"
+msgstr "屏保"
+
