@@ -2,6 +2,8 @@
 
 This is the LuCI app written for openwrt  which supports ssd 1306 0.91' oled display on Raspberry Pi 4/CM4
 
+Change the default i2c interface to `/dev/i2c-1`
+
 
 ## Features
 ---
