@@ -1,80 +1,42 @@
 # luci-app-oled
 
-This is the LuCI app written for openwrt (**tested ~~only~~ on NanoPi R2S**) which supports ssd 1306 0.91' oled display.
+This is the LuCI app written for openwrt  which supports ssd 1306 0.91' oled display on Raspberry Pi 4/CM4
 
-**Raspberry Pi CM4**
 
-This has been tested on Raspberry Pi CM4 as described in issue [#10](https://github.com/NateLol/luci-app-oled/issues/10#issuecomment-922245476).
-You can find what revisions you need to make to have it work on your device.
-Enjoy!
-
-## Features|功能
+## Features
 ---
-### Dispaly Info|显示信息
+### Dispaly Info
 
-**0. Enable|开启**
+**0. Enable**
 
-开启oled显示。
+Enable OLED
 
-**1. Autoswitch|定时开关**
+**1. Autoswitch**
 
-由于夜间oled的显示屏太亮，并且也几乎不会看它，所以应邀提供定时开关的功能，选中autoswitch之后，可以设置**显示**的起始和结束时间。
+Since the oled display is so bright at night and you hardly ever look at it, you should be invited to provide a timed on/off function, and after checking autoswitch, you can set the start and end time of the **display**.
 
-**2. Time|时间**
+**2. Time**
 
-显示时间。
+Display time.
 
-**3. IP|IP地址**
+**3. IP**
 
-显示LAN口的IP地址，记得LAN口不可以去除**桥接**选项，否则失效。由于使用的是`br-lan`，因为不同固件可能会交换`eth0`和`eth1`。
-
-**4. CPU Temp|CPU温度**
-
-显示CPU温度。
-
-**5. CPU Freq|CPU频率**
-
-显示实时CPU频率
-
-**6. Network Speed|网速**
-
-提供不同接口的选择，`eth0`和`eth1`,个人可以按需修改。网速单位基准为字节(Byte)而不是一般的位（bit），[MB/s, KB/s, B/s]这样显示的数字能够比较小，不至于过长。
-
-**7. Display Interval|显示间隔**
-
-为了延缓oled的光衰，提供屏保服务，每隔设定的时间运行一次屏保程序。
-
----
-### Screensavers|屏保
-
-屏保提供不同的选择，默认推荐的是`Scroll Text|文字滚动`，其他的选择自行探索。
-
-## Q&A
-
-Q0. 如何使用该程序？|在那里找到luci界面？
-
-A0. 该程序安装位置在luci界面的`services|服务`下的`OLED`，点击即可找到。
-
----
-
-Q1. 是否会支持其他oled屏幕，例如同系列的0.96'的？
-
-A1. 由于开发者身边并没有相应的屏幕去调试，所以是暂时不考虑吧。如果你想贡献代码，非常欢迎，请开PR。
-
----
+The IP address of the LAN port is displayed, remember that the LAN port must not have the **Bridging** option removed or it will fail. Since `br-lan` is used, as different firmware may swap `eth0` and `eth1`.
 
 
-Q2. 为什么我的IP地址显示错误？
+**4. CPU Temp**
 
-A2. 很大原因是你修改了LAN接口的属性，例如去除了该接口的**桥接**属性。
+Displays the CPU temperature.
 
----
+**5. CPU Freq**
+
+Display real-time CPU frequency.
+
+**6. Network Speed**
+
+Provides a choice of different interfaces, `eth0` and `eth1`, which can be modified by individuals as needed. The base unit of network speed is byte instead of bit, [MB/s, KB/s, B/s] so that the displayed number can be smaller and not too long.
 
 
-Q3. 为什么我的oled不显示？
+**7. Display Interval**
 
-A3. 很有可能是您的固件内核驱动不完整，该程序的运行需要在内核驱动中加上**kmod-i2c-xxx**，见issue [#10](https://github.com/NateLol/luci-app-oled/issues/10)。
-
----
-
-如果你在使用过程中还遇到问题，请开issue。
+In order to slow down the light decay of oled, a screen saver service is provided to run the screen saver program at set intervals.
